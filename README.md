@@ -31,8 +31,8 @@ it.
 ### Installing
 
 1. Clone this repository.
-1. In the cloned repository, run `./autogen.sh`.
-1. If everything works, run `./configure --prefix=/usr && make && sudo make install`.
+2. In the cloned repository, run `./download_deps.sh`
+3. If everything is installed, run `./installer.sh` ,this will take care of the rest of the installation
 
 ## License
 
