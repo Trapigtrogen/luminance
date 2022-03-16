@@ -16,6 +16,9 @@ it.
 * Create new and modify existing groups (stored on the bridge, not on your computer)
 * Bridge information and management (rescan for lights, check for updates)
 
+My changes: I changed the url for bridge discovery as it is now completely different.\
+Now the bridge is able to be discovered at least. Program itself still functions weirdly, changing lights to pink all the time.
+
 ## Getting Started
 
 ### Requirements
@@ -26,13 +29,13 @@ it.
 * [phue](https://github.com/studioimaginaire/phue) 0.8 or later
 * [netdisco](https://github.com/home-assistant/netdisco) 0.7 or later
 * [requests](https://github.com/kennethreitz/requests) 2.10 or later
-* Hue bridge (tested with the first generation only)
+* Hue bridge
 
 ### Installing
 
 1. Clone this repository.
-2. In the cloned repository, run `./download_deps.sh`
-3. If everything is installed, run `./installer.sh` ,this will take care of the rest of the installation
+2. Run `sudo ./autogen.sh`. this will create `configure` file
+3. Run `sudo ./configure --prefix=/usr && make && sudo make install` to build and install
 
 ## License
 
